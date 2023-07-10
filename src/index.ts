@@ -16,7 +16,6 @@ async function run({
 
   const { state, changes, ref } = await gitlab.getChanges();
   if (state !== 'opened') {
-    logger.log('MR is closed');
     return;
   }
 
