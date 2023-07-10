@@ -1,0 +1,20 @@
+{
+  "name": "testdiff",
+  "version": "1.0.0",
+  "description": "测试自动cr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianxuemin/testdiff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianxuemin/testdiff/issues"
+  },
+  "homepage": "https://github.com/qianxuemin/testdiff#readme"
+}
