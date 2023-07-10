@@ -28,7 +28,7 @@ async function run({
     const change = changes[i];
     const message = await chatgpt.codeReview(change.diff);
     const result = await gitlab.codeReview({ message, ref, change });
-    logger.info(message, result?.data);
+    logger.info(message, result?.data?.);
   }
 }
 
