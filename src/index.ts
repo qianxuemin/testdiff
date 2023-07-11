@@ -16,6 +16,7 @@ async function run({
 
   const { state, changes, ref } = await gitlab.getChanges();
   if (state !== 'opened') {
+    logger.log('MR is closed');
     return;
   }
 
@@ -28,7 +29,7 @@ async function run({
     const change = changes[i];
     const message = await chatgpt.codeReview(change.diff);
     const result = await gitlab.codeReview({ message, ref, change });
-    logger.info(message, result?.data?.); // eslint-disable-line no-unused-expressions
+    logger.info(message, result?.data);
   }
 }
 
